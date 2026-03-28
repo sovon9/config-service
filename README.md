@@ -3,7 +3,11 @@
 A robust, centralized Configuration Server built with Spring Cloud Config. This service manages external properties for applications across all environments, secured via Spring Security, backed by a local filesystem (Native), and integrated with Spring Cloud Bus + Kafka for real-time dynamic configuration updates.
 
 ---
-
+## CURL to fetch config:
+example: 
+`` curl -u configUser:password \
+http://localhost:8763/SpringCloud-Bus-Kafka/default/1.0.0 ``
+---
 ## 1. Native Configuration Management
 
 ### What is it and why use it?
